@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <style>
+        /*
+        Css Reset - targets and resets 
+        all elements on the page
+        */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #6b4226;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+        }
+        nav{
+            background-color: #f4f4f4;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+        }
+        /*
+        Targeting HTML hierarchy requires 
+        that we seprate tags with spaces
+        */
+        nav a{
+            color: #6b4226;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /*
+            Classes are targeted using a dot (.)
+        */
+        .box{
+         border-width: 1px;
+         border-color: #ccc;
+         border-style: solid;
+         padding: 20px;
+         margin-bottom: 20px;
+        }
+        main{
+            margin: 20px;
+            padding: 20px;
+        }
+        ul{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--Website Header-->
+    <header>
+        <h1>Welcome to our Coffee Shop</h1>
+    </header>
+
+    <!--Website Navigation-->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About us</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Website Content-->
+     <main>
+        <!--Welcome Box-->
+        <div class="box">
+            <h2>Our Story</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima accusantium nobis temporibus voluptas dignissimos vel sequi sed illum possimus ea id provident sunt animi, distinctio perferendis esse. Delectus, quae id.</p>
+        </div>
+
+        <!-- Featured Items-->
+         <div class="box">
+            <h2> Featured Items </h2>
+            <ul>
+                <li>Espresso - &euro;1.50</li>
+                <li>Capucciono - &euro;3.50</li>
+                <li>Americano - &euro;2.00 </li>
+                <li>Macchiato - &euro; 2.30</li>
+            </ul>
+         </div>
+
+         <!--Location Box-->
+         <div class="box">
+            <h2>Location</h2>
+            <p>Door 69, haha good luck str, Mosta</p>
+         </div>
+     </main>
+</body>
+</html>
